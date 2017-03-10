@@ -2,7 +2,7 @@ FROM volgenic/ubuntu-service:latest
 
 LABEL maintainer "git@brennancheung.com"
 
-RUN apt-get update && apt-get install -y node.js npm
+RUN apt-get update && apt-get install -y node.js npm mariadb-client
 
 RUN npm install -g n && n latest
 
